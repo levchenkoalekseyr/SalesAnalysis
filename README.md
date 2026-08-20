@@ -32,3 +32,57 @@
 И финальный расчет
 
 <img width="1331" height="410" alt="image" src="https://github.com/user-attachments/assets/43f58199-db6b-45c0-ad6c-f134551508f3" />
+
+
+Задание 2
+В приложенном файле (data_EX2.csv) находятся исторические значения переменной Y и значения 6 переменных (X1 - X6), которые потенциально могут оказывать влияние на Y. Известно, что Y может зависеть от собственных исторических значений и некоторых переменных (X1-X6), а также их исторических значений.
+Необходимо:
+1.	Выделить значимые переменные (X1-X6), оказывающие влияние на Y. Оценить зависимость Y от значимых переменных (их предыдущих значений при необходимости), а также от собственных прошлых значений.
+2.	Построить прогноз для пропущенных значений Y.
+
+Оценка зависимости проводилась визуально после построения графика в Python
+
+<img width="911" height="477" alt="image" src="https://github.com/user-attachments/assets/71b3f7dd-4dc2-4aa4-ae70-6499d981e206" />
+
+<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/b62a2604-8103-43e3-bf5a-d77d91c1be03" />
+
+<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/0f155f3f-bc17-44bc-a153-c085052055ec" />
+
+Также была построена матрица корреляции для численной оценки зависимости
+
+<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/531fdf39-2ba9-4c9a-a2af-a810977f6044" />
+
+Также была оценена зависимость значения временного ряда от собственного предыдущего значения
+
+<img width="975" height="485" alt="image" src="https://github.com/user-attachments/assets/28263c7e-a686-4568-8768-f4a76e4297f1" />
+
+И взаимосвязь факторов между собой
+
+<img width="975" height="485" alt="image" src="https://github.com/user-attachments/assets/047ac5a5-10fe-49b3-bd15-f29630d3d440" />
+
+Выделены факторы с наибольшей взаимозависимостью
+
+<img width="885" height="333" alt="image" src="https://github.com/user-attachments/assets/772f0fa5-889a-4f19-8d61-5c421d99fa0c" />
+
+Далее проведено обучение мдели
+
+<img width="692" height="297" alt="image" src="https://github.com/user-attachments/assets/3dacd3f3-af2d-471a-bb2c-06046002d664" />
+
+И восстановление значений ряда
+
+<img width="686" height="511" alt="image" src="https://github.com/user-attachments/assets/187cffad-420f-4395-9700-0122cc9ba630" />
+
+Задание 3
+Требуется построить модель зависимости Y от X и прогноз на основе данных в файле
+
+Была проведена визуальная оценка зависимости
+
+<img width="756" height="462" alt="image" src="https://github.com/user-attachments/assets/76647cb2-da70-4942-8ed9-b8cdf62c2c60" />
+
+<img width="865" height="426" alt="image" src="https://github.com/user-attachments/assets/050dfba9-fcc8-4624-8a1f-b56e7a26647e" />
+
+В том задании прогноз делался в Excel
+
+<img width="865" height="426" alt="image" src="https://github.com/user-attachments/assets/2e8ecc0c-3333-449a-b4c2-7dec577ae761" />
+
+<img width="873" height="448" alt="image" src="https://github.com/user-attachments/assets/98d288a9-3f47-4ed7-90e4-ad167ae0d333" />
