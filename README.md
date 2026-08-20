@@ -13,6 +13,14 @@
 
 <img width="1037" height="728" alt="image" src="https://github.com/user-attachments/assets/8f8a5028-54eb-4943-8b3d-1545a36d4063" />
 
+Расчет статистических показателей проводился в Excel
+
 <img width="1705" height="650" alt="image" src="https://github.com/user-attachments/assets/36361a8f-0f40-4fd7-b60f-51fc0cc71480" />
 
+Симуляция стоимости котировки также производилась в ксель
 
+<img width="1702" height="448" alt="image" src="https://github.com/user-attachments/assets/17ed0377-910b-403d-9e17-70fedf1d4eac" />
+
+И финальный расчет
+
+<img width="1331" height="410" alt="image" src="https://github.com/user-attachments/assets/43f58199-db6b-45c0-ad6c-f134551508f3" />
