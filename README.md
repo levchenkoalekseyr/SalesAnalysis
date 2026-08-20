@@ -9,9 +9,17 @@
 Задание 1.
 Требуется оценить стоимость инструмента
 
+Провел анализ инструмента. Выделил основные характеристики:
+
+<img width="770" height="362" alt="image" src="https://github.com/user-attachments/assets/c0220511-d25a-4e6e-892c-7fd8b6c56537" />
+
 Оценка проводилась методом Монте-Карло по формуле
 
 <img width="1037" height="728" alt="image" src="https://github.com/user-attachments/assets/8f8a5028-54eb-4943-8b3d-1545a36d4063" />
+
+Результат
+
+<img width="976" height="215" alt="image" src="https://github.com/user-attachments/assets/f5a9e15a-4ddb-42cb-94d2-3074ffa6bc04" />
 
 Расчет статистических показателей проводился в Excel
 
