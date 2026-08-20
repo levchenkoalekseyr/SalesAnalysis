@@ -9,3 +9,10 @@
 Задание 1.
 Требуется оценить стоимость инструмента
 
+Оценка проводилась методом Монте-Карло по формуле
+
+<img width="1037" height="728" alt="image" src="https://github.com/user-attachments/assets/8f8a5028-54eb-4943-8b3d-1545a36d4063" />
+
+<img width="1705" height="650" alt="image" src="https://github.com/user-attachments/assets/36361a8f-0f40-4fd7-b60f-51fc0cc71480" />
+
+
