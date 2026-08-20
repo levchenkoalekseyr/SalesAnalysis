@@ -11,32 +11,35 @@
 
 Провел анализ инструмента. Выделил основные характеристики:
 
-<img width="770" height="362" alt="image" src="https://github.com/user-attachments/assets/c0220511-d25a-4e6e-892c-7fd8b6c56537" />
+<img width="911" height="362" alt="image" src="https://github.com/user-attachments/assets/c0220511-d25a-4e6e-892c-7fd8b6c56537" />
 
 Оценка проводилась методом Монте-Карло по формуле
 
-<img width="1037" height="728" alt="image" src="https://github.com/user-attachments/assets/8f8a5028-54eb-4943-8b3d-1545a36d4063" />
+<img width="911" height="728" alt="image" src="https://github.com/user-attachments/assets/8f8a5028-54eb-4943-8b3d-1545a36d4063" />
 
 Результат
 
-<img width="976" height="215" alt="image" src="https://github.com/user-attachments/assets/f5a9e15a-4ddb-42cb-94d2-3074ffa6bc04" />
+<img width="911" height="215" alt="image" src="https://github.com/user-attachments/assets/f5a9e15a-4ddb-42cb-94d2-3074ffa6bc04" />
 
 Расчет статистических показателей проводился в Excel
 
-<img width="1705" height="650" alt="image" src="https://github.com/user-attachments/assets/36361a8f-0f40-4fd7-b60f-51fc0cc71480" />
+<img width="911" height="650" alt="image" src="https://github.com/user-attachments/assets/36361a8f-0f40-4fd7-b60f-51fc0cc71480" />
 
 Симуляция стоимости котировки также производилась в ксель
 
-<img width="1702" height="448" alt="image" src="https://github.com/user-attachments/assets/17ed0377-910b-403d-9e17-70fedf1d4eac" />
+<img width="911" height="448" alt="image" src="https://github.com/user-attachments/assets/17ed0377-910b-403d-9e17-70fedf1d4eac" />
 
 И финальный расчет
 
-<img width="1331" height="410" alt="image" src="https://github.com/user-attachments/assets/43f58199-db6b-45c0-ad6c-f134551508f3" />
+<img width="911" height="410" alt="image" src="https://github.com/user-attachments/assets/43f58199-db6b-45c0-ad6c-f134551508f3" />
 
 
 Задание 2
+
 В приложенном файле (data_EX2.csv) находятся исторические значения переменной Y и значения 6 переменных (X1 - X6), которые потенциально могут оказывать влияние на Y. Известно, что Y может зависеть от собственных исторических значений и некоторых переменных (X1-X6), а также их исторических значений.
+
 Необходимо:
+
 1.	Выделить значимые переменные (X1-X6), оказывающие влияние на Y. Оценить зависимость Y от значимых переменных (их предыдущих значений при необходимости), а также от собственных прошлых значений.
 2.	Построить прогноз для пропущенных значений Y.
 
@@ -44,25 +47,25 @@
 
 <img width="911" height="477" alt="image" src="https://github.com/user-attachments/assets/71b3f7dd-4dc2-4aa4-ae70-6499d981e206" />
 
-<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/b62a2604-8103-43e3-bf5a-d77d91c1be03" />
+<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/b62a2604-8103-43e3-bf5a-d77d91c1be03" />
 
-<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/0f155f3f-bc17-44bc-a153-c085052055ec" />
+<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/0f155f3f-bc17-44bc-a153-c085052055ec" />
 
 Также была построена матрица корреляции для численной оценки зависимости
 
-<img width="946" height="492" alt="image" src="https://github.com/user-attachments/assets/531fdf39-2ba9-4c9a-a2af-a810977f6044" />
+<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/531fdf39-2ba9-4c9a-a2af-a810977f6044" />
 
 Также была оценена зависимость значения временного ряда от собственного предыдущего значения
 
-<img width="975" height="485" alt="image" src="https://github.com/user-attachments/assets/28263c7e-a686-4568-8768-f4a76e4297f1" />
+<img width="911" height="485" alt="image" src="https://github.com/user-attachments/assets/28263c7e-a686-4568-8768-f4a76e4297f1" />
 
 И взаимосвязь факторов между собой
 
-<img width="975" height="485" alt="image" src="https://github.com/user-attachments/assets/047ac5a5-10fe-49b3-bd15-f29630d3d440" />
+<img width="911" height="485" alt="image" src="https://github.com/user-attachments/assets/047ac5a5-10fe-49b3-bd15-f29630d3d440" />
 
 Выделены факторы с наибольшей взаимозависимостью
 
-<img width="885" height="333" alt="image" src="https://github.com/user-attachments/assets/772f0fa5-889a-4f19-8d61-5c421d99fa0c" />
+<img width="911" height="333" alt="image" src="https://github.com/user-attachments/assets/772f0fa5-889a-4f19-8d61-5c421d99fa0c" />
 
 Далее проведено обучение мдели
 
@@ -86,3 +89,26 @@
 <img width="865" height="426" alt="image" src="https://github.com/user-attachments/assets/2e8ecc0c-3333-449a-b4c2-7dec577ae761" />
 
 <img width="873" height="448" alt="image" src="https://github.com/user-attachments/assets/98d288a9-3f47-4ed7-90e4-ad167ae0d333" />
+
+
+Задание 5
+
+Требуется построить посуточную накопительную диаграмму области допустимых значений отбора, области best-effort и кривую фактического отбора контрагентом в соответствии со следующими условиями:
+
+  • 2023 год
+  • годовые контрактные количества (ГКК): не более 2900 млн куб. м
+  • минимальные годовые количества (МГК): не менее 2320 млн куб. м
+  • квартальные контрактные количества (ККК): II и III кв. не более 493 млн куб. м
+  • минимальные квартальные количества (МКК): I и IV кв. не менее 928 млн куб. м
+  • суточные контрактные количества (СКК): от 0 до 10,4 млн куб. м
+  • количества best-effort* в сутки: 9,6 млн куб. м
+
+Контрагент осуществлял фактический отбор по текущую дату равномерно по 7,5 млн куб. м в сутки.
+Полученный результат необходимо оформить на 1 листе в PDF.
+
+Расчет и построение производились в Excel
+
+<img width="920" height="548" alt="image" src="https://github.com/user-attachments/assets/92e662c1-05f0-4695-a894-d670070f3f8f" />
+
+*best-effort – не гарантированная, но возможная дополнительная поставка по взаимной договоренности сторон (по сути, увеличение СКК).
+Примечание: область best-effort требуется показывать другим цветом.
