@@ -69,26 +69,26 @@
 
 Далее проведено обучение мдели
 
-<img width="692" height="297" alt="image" src="https://github.com/user-attachments/assets/3dacd3f3-af2d-471a-bb2c-06046002d664" />
+<img width="911" height="297" alt="image" src="https://github.com/user-attachments/assets/3dacd3f3-af2d-471a-bb2c-06046002d664" />
 
 И восстановление значений ряда
 
-<img width="686" height="511" alt="image" src="https://github.com/user-attachments/assets/187cffad-420f-4395-9700-0122cc9ba630" />
+<img width="911" height="511" alt="image" src="https://github.com/user-attachments/assets/187cffad-420f-4395-9700-0122cc9ba630" />
 
 Задание 3
 Требуется построить модель зависимости Y от X и прогноз на основе данных в файле
 
 Была проведена визуальная оценка зависимости
 
-<img width="756" height="462" alt="image" src="https://github.com/user-attachments/assets/76647cb2-da70-4942-8ed9-b8cdf62c2c60" />
+<img width="911" height="462" alt="image" src="https://github.com/user-attachments/assets/76647cb2-da70-4942-8ed9-b8cdf62c2c60" />
 
-<img width="865" height="426" alt="image" src="https://github.com/user-attachments/assets/050dfba9-fcc8-4624-8a1f-b56e7a26647e" />
+<img width="911" height="426" alt="image" src="https://github.com/user-attachments/assets/050dfba9-fcc8-4624-8a1f-b56e7a26647e" />
 
 В том задании прогноз делался в Excel
 
-<img width="865" height="426" alt="image" src="https://github.com/user-attachments/assets/2e8ecc0c-3333-449a-b4c2-7dec577ae761" />
+<img width="911" height="426" alt="image" src="https://github.com/user-attachments/assets/2e8ecc0c-3333-449a-b4c2-7dec577ae761" />
 
-<img width="873" height="448" alt="image" src="https://github.com/user-attachments/assets/98d288a9-3f47-4ed7-90e4-ad167ae0d333" />
+<img width="911" height="448" alt="image" src="https://github.com/user-attachments/assets/98d288a9-3f47-4ed7-90e4-ad167ae0d333" />
 
 
 Задание 5
@@ -112,3 +112,16 @@
 
 *best-effort – не гарантированная, но возможная дополнительная поставка по взаимной договоренности сторон (по сути, увеличение СКК).
 Примечание: область best-effort требуется показывать другим цветом.
+
+
+Задание 6
+
+Требуется подготовить (1) расчеты, (2) краткую пояснительную справку1 и (3) презентацию2, обосновывающие позицию начальника Департамента для голосования по вопросу о согласовании предложения
+
+<img width="911" height="526" alt="image" src="https://github.com/user-attachments/assets/b473ee32-e0e4-4985-a7da-d7311f3dac5c" />
+
+<img width="911" height="527" alt="image" src="https://github.com/user-attachments/assets/7eb9438d-bded-4632-81fa-ffc5f0bb22e5" />
+
+Справка и расчеты приложены
+
+
