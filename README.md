@@ -44,21 +44,19 @@ N = 714 дней (01.06.2016 — 01.10.2018)<br>
 Расчет статистических показателей в Excel
 
 <p align="center">
-  <img width="1200" height="650" alt="image" src="https://github.com/user-attachments/assets/36361a8f-0f40-4fd7-b60f-51fc0cc71480" />
+  <img width="782" height="502" alt="image" src="https://github.com/user-attachments/assets/e35fc5c5-437e-4d6a-8deb-41da79f1f464" />
 </p>
 
 Симуляция стоимости котировки также в Excel
-
-<img width="1100" height="448" alt="image" src="https://github.com/user-attachments/assets/17ed0377-910b-403d-9e17-70fedf1d4eac" />
+<p align="center">
+  <img width="745" height="177" alt="image" src="https://github.com/user-attachments/assets/da2ea5a3-c6dd-4f85-a186-41a8c8160546" />
+</p>
 
 И финальный расчет
 
 <p align="center">
-  <img width="911" height="410" alt="image" src="https://github.com/user-attachments/assets/43f58199-db6b-45c0-ad6c-f134551508f3" />
+  <img width="627" height="317" alt="image" src="https://github.com/user-attachments/assets/aaf824a7-f56a-4124-9706-6c5d0e8a8ccc" />
 </p>
-
-По итогом 1000 симуляций методом Монте-Карло стоимость составляет 750 000,00 Евро
-
 
 ## Выделение значимых переменные (X1-X6), оказывающие влияние на Y. И прогноз значений Y при изменении значений факторов. 
 
