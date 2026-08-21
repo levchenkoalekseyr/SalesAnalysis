@@ -1,0 +1,102 @@
+import numpy as np
+import pandas as pd
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense
+from statsmodels.graphics import tsaplots
+from sklearn.model_selection import train_test_split
+
+f = pd.read_csv("data_EX2.csv")    #чтение файла
+prognoz = f[pd.isna(f['y']) != False]
+dataset = f[pd.isna(f['y']) == False]    #так как нужно построить прогноз Y, значит есть строки без Y, для нахождения зависимости строки нужно удалить
+corr_marrix = dataset.corr().round(3) # округление до 3 знаков
+corr_marrix.style.background_gradient(cmap='bwr') # постоение матрицы кореляции (зависимости признаков)
+
+#поиск автокорреляции
+f = pd.read_csv("data_EX2.csv")
+f = f[~f['y'].isnull()]
+x = np.array((f['y']))
+
+#видим после построения графика с лагом 999 (элементов в выборке), что автокорреляция есть 
+#подбираем лаг для опеделения на каком значении заканчивается
+
+fig = tsaplots.plot_acf(x, lags=45)
+plt.show() #строим график
+
+dataset = dataset.iloc[43:] # убираем значения из расчета из-за автокорреляции
+
+#отделение признаков от результата
+trg = dataset['y'] #результат (y)
+trn = dataset.drop(['y'], axis=1) #признаки (x1-x6)
+
+#деление выборок на тестовыю и обучающую. Можно разные пропорции.    
+Xtrn, Xtest, Ytrn, Ytest = train_test_split(trn, trg, test_size=0.4) 
+
+#стандартизация (новое среднее значение = 0, дисперсия = 1) 
+#Из каждого признака вычесть его среднее значение и разделить на стандартное отклонение. Так модель работет быстрее и точнее
+mean = Xtrn.mean(axis=0) # axis=0 т.к. по каждому признаку отдельно среднее и стандартное отклонение
+std = Xtrn.std(axis = 0)
+
+Xtrn -= mean
+Xtrn /=std
+
+Xtest -= mean
+Xtest /=std
+
+#создание модели
+model = Sequential()
+model.add(Dense(128, activation='relu', input_shape=(Xtrn.shape[1],)))
+model.add(Dense(1)) #один нейрон, т.к. вернуться должно одно значение
+model.compile(optimizer='adam', loss='mse', metrics=['mae'])
+
+model.fit(Xtrn, Ytrn, epochs =350, batch_size = 1) #количество epochs влияет на размер ошибки результата
+mse, mae = model.evaluate(Xtest, Ytest, verbose=0) #mae - средняя абсолютная ошибка, mse - среднеквадатичная ошибка
+
+#применение модели для прогноза
+prognoz_standart = prognoz.copy()
+
+mean = prognoz_standart.mean(axis=0) # axis=0 т.к. по каждому признаку отдельно среднее и стандартное отклонение
+std = prognoz_standart.std(axis = 0)
+
+prognoz_standart -= mean
+prognoz_standart /=std
+pred = model.predict(prognoz_standart[['x1', 'x2', 'x3', 'x4', 'x5', 'x6']])
+
+names = []
+for i in pred:
+    names.extend(i)
+
+prognoz = prognoz.drop(['y'], axis = 1)
+prognoz.insert (loc= 0 , column='y', value=names)
+
+# при необходимости сохраняем полученные числовые значения в файл
+#writer = pd.ExcelWriter('output3.xlsx') 
+#prognoz.to_excel(writer)
+#writer.save()
+
+#строим на одном графике имеющиеся значения и прогноз
+pred = pd.DataFrame({
+    'текущие значения': dataset['y'],
+    'прогнозные значения': prognoz['y']})
+pred.plot()
+
+#сохранение прогнозных значений в файл
+prognoz.to_excel('otvet.xlsx')
+
+#графики изменения корреляции Y и X1-X6 (кросс-корреляция)
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x1'], adjusted=False)).plot()
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x2'], adjusted=False)).plot()
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x3'], adjusted=False)).plot()
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x4'], adjusted=False)).plot()
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x5'], adjusted=False)).plot()
+pd.DataFrame(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x6'], adjusted=False)).plot()
+
+# Минимальные и максимальные значения корреляции Y и X1-X6
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x1'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x1'], adjusted=False)))
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x2'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x2'], adjusted=False)))
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x3'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x3'], adjusted=False)))
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x4'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x4'], adjusted=False)))
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x5'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x5'], adjusted=False)))
+print(max(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x6'], adjusted=False)), min(sm.tsa.stattools.ccf(dataset2['y'], dataset2['x6'], adjusted=False)))
