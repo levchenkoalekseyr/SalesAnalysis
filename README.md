@@ -62,36 +62,42 @@ N = 714 дней (01.06.2016 — 01.10.2018)<br>
 
 Оценка зависимости проводилась визуально после построения графика в Python
 
-<img width="911" height="477" alt="image" src="https://github.com/user-attachments/assets/71b3f7dd-4dc2-4aa4-ae70-6499d981e206" />
+<img width="1065" height="406" alt="image" src="https://github.com/user-attachments/assets/b6d3a6f5-2e36-48f2-8214-90412247ad1f" />
 
-<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/b62a2604-8103-43e3-bf5a-d77d91c1be03" />
+<img width="1068" height="411" alt="image" src="https://github.com/user-attachments/assets/e4a214cd-08b1-497c-9046-4f8fc69abc72" />
 
-<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/0f155f3f-bc17-44bc-a153-c085052055ec" />
+<img width="1051" height="407" alt="image" src="https://github.com/user-attachments/assets/32aad9de-aa25-4891-91db-ee5bc725c6b8" />
 
-Также была построена матрица корреляции для численной оценки зависимости
+Матрица корреляции для численной оценки зависимости
 
-<img width="911" height="492" alt="image" src="https://github.com/user-attachments/assets/531fdf39-2ba9-4c9a-a2af-a810977f6044" />
+<img width="1023" height="457" alt="image" src="https://github.com/user-attachments/assets/02d6273b-c1db-4de7-903e-026f1d9d196c" />
 
-Также была оценена зависимость значения временного ряда от собственного предыдущего значения
+Оценка зависимость значения временного ряда от собственного предыдущего значения
 
-<img width="911" height="485" alt="image" src="https://github.com/user-attachments/assets/28263c7e-a686-4568-8768-f4a76e4297f1" />
+<img width="1142" height="447" alt="image" src="https://github.com/user-attachments/assets/9cb70501-f283-4cbd-9976-a08ab3c07c82" />
 
-И взаимосвязь факторов между собой
+Взаимосвязь факторов между собой
 
-<img width="911" height="485" alt="image" src="https://github.com/user-attachments/assets/047ac5a5-10fe-49b3-bd15-f29630d3d440" />
+<img width="1027" height="465" alt="image" src="https://github.com/user-attachments/assets/4f4a1bdc-f070-461f-89e1-ae9217fbba50" />
 
-Выделены факторы с наибольшей взаимозависимостью
+Факторы с наибольшей взаимозависимостью
+При полном отсутствии взаимного влияния факторов друг на друга все значения матрицы корреляции кроме главной диагонали будут равны нулю, а определитель равен единице. Исключая поочередно разные факторы, найдем сочетание при котором определитель будет
+ближе к единице
 
-<img width="911" height="333" alt="image" src="https://github.com/user-attachments/assets/772f0fa5-889a-4f19-8d61-5c421d99fa0c" />
+<img width="1012" height="206" alt="image" src="https://github.com/user-attachments/assets/a842a808-8a0f-41a9-87a2-6da14f34c1d9" />
 
-Далее проведено обучение мдели
+Зависимость от предыдущих значений Х1-Х6
 
-<img width="911" height="297" alt="image" src="https://github.com/user-attachments/assets/3dacd3f3-af2d-471a-bb2c-06046002d664" />
+<img width="1090" height="422" alt="image" src="https://github.com/user-attachments/assets/51f1e202-9122-4ce2-bee6-59ad60472c1b" />
 
-И восстановление значений ряда
+<img width="1083" height="395" alt="image" src="https://github.com/user-attachments/assets/653efee4-7b5f-4e4c-a603-6d6537b08332" />
 
-<img width="911" height="511" alt="image" src="https://github.com/user-attachments/assets/187cffad-420f-4395-9700-0122cc9ba630" />
+<img width="1057" height="398" alt="image" src="https://github.com/user-attachments/assets/c10573be-b62d-46ce-ab2c-05424fab3222" />
 
+Обучение модели и восстановление значений Y
+<p align="center">
+  <img width="663" height="497" alt="image" src="https://github.com/user-attachments/assets/9b522e05-8b7a-482d-a243-c34a1c2b6a42" />
+</p>
 
 Задание 3
 Требуется построить модель зависимости Y от X и прогноз на основе данных в файле
