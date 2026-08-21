@@ -99,21 +99,32 @@ N = 714 дней (01.06.2016 — 01.10.2018)<br>
   <img width="663" height="497" alt="image" src="https://github.com/user-attachments/assets/9b522e05-8b7a-482d-a243-c34a1c2b6a42" />
 </p>
 
-Задание 3
-Требуется построить модель зависимости Y от X и прогноз на основе данных в файле
+## модель зависимости Y от X и прогноз
 
-Была проведена визуальная оценка зависимости
+Визуальная оценка зависимости
 
-<img width="911" height="462" alt="image" src="https://github.com/user-attachments/assets/76647cb2-da70-4942-8ed9-b8cdf62c2c60" />
+<img width="863" height="380" alt="image" src="https://github.com/user-attachments/assets/432fee64-f160-4065-a11d-fb7f29ae5d3d" />
 
-<img width="911" height="426" alt="image" src="https://github.com/user-attachments/assets/050dfba9-fcc8-4624-8a1f-b56e7a26647e" />
+- Возрастающий тренд. Можно описать линейной функцией 
+- Выраженная сезонность. (Повтор с периодом 3 по шкале x, можно описать sin(2x))
+- Сезонность аддитивная (Ряд в пределах полос постоянной ширины) 
+- Ряд меняет свое поведение только в начале (возрастает)
+- Нет ярко выраженных выбросов
+Вывод: Ряд может быть описан логарифмической функцией с возрастанием и наложением сезонности
 
-В том задании прогноз делался в Excel
+<img width="938" height="412" alt="image" src="https://github.com/user-attachments/assets/8a812694-f7b4-4372-b956-aeac6b085e3e" />
 
-<img width="911" height="426" alt="image" src="https://github.com/user-attachments/assets/2e8ecc0c-3333-449a-b4c2-7dec577ae761" />
+Подбор уравнения
 
-<img width="911" height="448" alt="image" src="https://github.com/user-attachments/assets/98d288a9-3f47-4ed7-90e4-ad167ae0d333" />
+<img width="995" height="441" alt="image" src="https://github.com/user-attachments/assets/db3fc11a-070a-4b38-8037-e5ef9e2e45d3" />
 
+Тренд+сезонность
+
+<img width="1037" height="446" alt="image" src="https://github.com/user-attachments/assets/fdec7895-5896-45f3-878b-aa295a8d6e8e" />
+
+Прогноз будущих значений
+
+<img width="1017" height="456" alt="image" src="https://github.com/user-attachments/assets/852649fc-6827-4764-aa53-41240ed066a8" />
 
 Задание 5
 
